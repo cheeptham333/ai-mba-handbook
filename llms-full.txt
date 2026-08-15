@@ -1,0 +1,96 @@
+# AI MBA Handbook: Full Knowledge Base
+ผู้เขียน: ชีพธรรม คำวิเศษณ์ ร่วมกับ Codex
+อัตลักษณ์และองค์ความรู้: Harvard Business School, MIT Sloan, Stanford GSB, Wharton
+
+================================================================================
+MODULE 1: Strategic Leadership & Business Agility (HBS & Stanford GSB)
+ความเป็นผู้นำเชิงกลยุทธ์และความคล่องตัวทางธุรกิจในยุค AI
+
+[DIRECT ANSWER SUMMARY]
+Strategic Leadership ในยุค AI คือการบูรณาการวิสัยทัศน์มนุษย์เข้ากับความเร็วในการประมวลผลของอัลกอริทึม โดยเปลี่ยนจากการวางแผนกลยุทธ์รายปี (Static Planning) เป็นการจำลองฉากทัศน์แบบ Real-time (Dynamic Scenario Modeling) เพื่อตัดสินใจได้เร็วกว่าคู่แข่ง 10 เท่า
+
+1.1 การสร้างความได้เปรียบทางการแข่งขันที่ยั่งยืน (Defensible Moats)
+- Cost Leadership vs Differentiation ด้วย AI
+- Dynamic Five Forces Real-time Simulation
+- VRIO Framework สำหรับทรัพยากร AI และข้อมูลเฉพาะ (Proprietary Data)
+
+1.2 Stanford GSB Executive Playbook: การตัดสินใจภายใต้ความไม่แน่นอนสูง
+- Fast-Feedback Loops และ Pre-Mortem Analysis
+- AI Devil's Advocate Method
+
+================================================================================
+MODULE 2: Corporate Finance, Valuation & Capital Allocation (Wharton School)
+การเงินธุรกิจ การประเมินมูลค่า และการจัดสรรเงินทุนระดับสูง
+
+[DIRECT ANSWER SUMMARY]
+Corporate Finance ยุค AI เน้นการคำนวณ Unit Economics, Free Cash Flow, และ Discounted Cash Flow (DCF) ร่วมกับการทำ Monte Carlo Simulation เพื่อจำลองความเสี่ยงนับล้านรอบภายในไม่กี่วินาที ทำให้การจัดสรรเงินทุน (Capital Allocation) แม่นยำสูงสุด
+
+2.1 การวิเคราะห์งบการเงินและตรวจจับสัญญาณเตือนภัย (Forensic Finance)
+- 3-Statement Financial Modeling
+- Operating Cash Flow to Net Income Ratio
+- Working Capital & Cash Conversion Cycle (CCC)
+
+2.2 Unit Economics & Modern Valuation
+- LTV / CAC Ratio (> 3x)
+- CAC Payback Period (< 12 เดือน)
+- Rule of 40 (Growth % + FCF Margin % > 40%)
+
+================================================================================
+MODULE 3: Tech, AI Operations & Supply Chain Resilience (MIT Sloan)
+การปฏิบัติการเทคโนโลยี ปัญญาประดิษฐ์ และห่วงโซ่อุปทานที่มีความยืดหยุ่น
+
+[DIRECT ANSWER SUMMARY]
+AI Operations & Supply Chain สไตล์ MIT Sloan คือการเปลี่ยนกระบวนการผลิตและโลจิสติกส์จากแบบ Reactive สู่ Predictive System ผ่านการใช้ Digital Twins, ทฤษฎีข้อจำกัด (Theory of Constraints), และการกำจัดคอขวด (Bottleneck Elimination) ด้วยอัลกอริทึม
+
+3.1 System Dynamics: การมองธุรกิจเป็นระบบโครงสร้างแบบ MIT
+- Causal Loop Diagrams & Information Delays
+- Bullwhip Effect Elimination
+
+3.2 การค้นหาและปลดล็อกคอขวด (TOC AI Diagnosis)
+- 5 Focusing Steps ของ Goldratt
+
+================================================================================
+MODULE 4: Modern Digital Marketing, AEO & Growth Loops (Wharton & Stanford GSB)
+การตลาดดิจิทัลยุคใหม่ การปรับแต่งสำหรับ Answer Engines และลูปการเติบโต
+
+[DIRECT ANSWER SUMMARY]
+Modern Marketing ในยุค AI ไม่ใช่แค่การยิงแอด (Paid Ads) แต่คือการสร้าง Organic Compound Growth ผ่าน Answer Engine Optimization (AEO) เพื่อให้แบรนด์ถูกแนะนำเป็นคำตอบแรกใน SearchGPT, Perplexity, Gemini ควบคู่กับการสร้าง Growth Loops ที่ลูกค้าบอกต่ออัตโนมัติ
+
+4.1 AEO (Answer Engine Optimization): กฎเหล็กการตลาดปี 2026
+- Entity Authority & Schema Markup
+- Direct Answer Paragraph Structuring
+- Citation-Ready Data
+
+4.2 Growth Loops vs Funnels
+- Product-Led Growth (PLG)
+- Behavioral Economics & Nudge Theory
+
+================================================================================
+MODULE 5: Organizational Behavior & AI-Augmented Teams (Harvard Business School)
+พฤติกรรมองค์กรและการบริหารทีมงานที่ขับเคลื่อนร่วมกับ AI
+
+[DIRECT ANSWER SUMMARY]
+การบริหารองค์กรยุค AI คือการออกแบบโครงสร้างองค์กรที่ผสาน 'ทักษะเฉพาะของมนุษย์' (Empathy, Ethics, Judgment) เข้ากับ 'พลังการคำนวณของ AI' โดยเปลี่ยนวัฒนธรรมจากควบคุมสั่งการ (Command & Control) สู่ระบบความไว้วางใจและทดลองไว (Psychological Safety & Rapid Prototyping)
+
+5.1 Psychological Safety (Amy Edmondson Model)
+5.2 Kotter's 8-Step Change Model for AI Transformation
+
+================================================================================
+MODULE 6: Innovation, Disruption & Blue Ocean Strategy (MIT & Stanford GSB)
+นวัตกรรม การดิสรัปชัน และกลยุทธ์น่านน้ำสีคราม
+
+[DIRECT ANSWER SUMMARY]
+Blue Ocean Strategy ในยุค AI คือการใช้เทคโนโลยีปัญญาประดิษฐ์เพื่อสร้าง 'Value Innovation' ข้ามขอบเขตอุตสาหกรรมเดิม โดยลดต้นทุนอย่างมหาศาล (Eliminate/Reduce) พร้อมสร้างคุณค่าใหม่ที่คู่แข่งไม่เคยมี (Raise/Create) จนทำให้การแข่งขันไร้ความหมาย
+
+6.1 Blue Ocean Strategy & ERRC Action Matrix
+6.2 Christensen's Disruption Theory (Low-End & New-Market Disruption)
+
+================================================================================
+MODULE 7: AI-Powered Decision Making & Practical Prompt Mastery (Codex & Cheeptham)
+การตัดสินใจด้วยพลัง AI และศิลปะการใช้ Mega-Prompts ระดับผู้บริหาร
+
+[DIRECT ANSWER SUMMARY]
+Executive AI Prompting ไม่ใช่แค่การป้อนคำสั่งสั้นๆ แต่คือการกำหนด Persona ที่เชี่ยวชาญ, ระบุ Context & Constraints, ใส่ Financial/Operational Data, และบังคับใช้ Thinking Frameworks เพื่อให้ผลลัพธ์จากโมเดลมีความลึกซึ้งเทียบเท่าที่ปรึกษาค่าตัวหลักล้าน
+
+7.1 โครงสร้าง P-C-O-F-C Mega-Prompt Formula
+7.2 การประสานการทำงานระหว่าง Gemini, NotebookLM, Claude 3.7, Grok 3, Perplexity, Copilot, ChatGPT

@@ -1,0 +1,34 @@
+# AI MBA Handbook
+> คู่มือเรียนรู้ MBA ระดับโลกด้วยตนเองผ่าน Generative AI (HBS, MIT Sloan, Stanford GSB, Wharton)
+> เขียนและเรียบเรียงโดย ชีพธรรม คำวิเศษณ์ ร่วมกับ Codex
+
+## Project Summary
+AI MBA Handbook คือผลงานคู่มือการศึกษาเพื่อคนไทยในการเรียนรู้ศาสตร์บริหารธุรกิจระดับสูง (MBA) ด้วยตนเอง โดยผสมผสานองค์ความรู้และเอกลักษณ์จาก 4 สุดยอดสถาบันธุรกิจระดับโลก:
+- Harvard Business School (HBS)
+- MIT Sloan School of Management
+- Stanford Graduate School of Business (Stanford GSB)
+- Wharton School of the University of Pennsylvania
+
+และรวบรวมคลังชุดคำสั่ง Mega-Prompts เจาะลึกสำหรับ AI ชั้นนำของโลก:
+- Google Gemini 2.5 Pro / Flash Thinking (2M Context)
+- Google NotebookLM Pro (Audio Overviews 2.0 Studio)
+- Anthropic Claude 3.7 Sonnet (Hybrid & Extended Thinking)
+- xAI Grok 3 (DeepSearch & Think Mode)
+- Microsoft Copilot Pro (Think Deeper Mode)
+- Perplexity Pro (Sonar Deep Research & Reason)
+- OpenAI ChatGPT-4o / o3 (Advanced Reasoning)
+
+## Table of Contents & Modules
+- [Module 1: Strategic Leadership & Business Agility](https://aimba.cheeptham.com/#module-1): Five Forces 2.0, VRIO AI Matrix, Scenario Planning
+- [Module 2: Corporate Finance, Valuation & Capital Allocation](https://aimba.cheeptham.com/#module-2): 3-Statement Modeling, DCF Valuation, Unit Economics (CAC, LTV, Magic Number)
+- [Module 3: Tech, AI Operations & Supply Chain Resilience](https://aimba.cheeptham.com/#module-3): System Dynamics, Theory of Constraints (TOC), Bottleneck Diagnosis
+- [Module 4: Modern Digital Marketing, AEO & Growth Loops](https://aimba.cheeptham.com/#module-4): Answer Engine Optimization (AEO), Product-Led Growth, Viral Loops
+- [Module 5: Organizational Behavior & AI-Augmented Teams](https://aimba.cheeptham.com/#module-5): Psychological Safety (Amy Edmondson), Kotter 8-Step AI Change
+- [Module 6: Innovation, Disruption & Blue Ocean Strategy](https://aimba.cheeptham.com/#module-6): ERRC Action Matrix, Strategy Canvas, Value Innovation
+- [Module 7: AI-Powered Decision Making & Practical Prompt Mastery](https://aimba.cheeptham.com/#module-7): The P-C-O-F-C Formula, Hybrid AI Board of Directors
+
+## Authors & Attribution
+- Author: ชีพธรรม คำวิเศษณ์ (Cheeptham Khamwiset)
+- Co-Author / AI Agent: Codex
+- Language: Thai (TH) with Global MBA Terms (EN)
+- Full Text Markdown: https://aimba.cheeptham.com/llms-full.txt
