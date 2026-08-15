@@ -1,0 +1,477 @@
+/* ==========================================================================
+   AI MBA Handbook - Components (Prompt Cards, Simulators, Cheatsheets, FAQs)
+   ========================================================================== */
+
+/* Multi-AI Prompt Selector & Interactive Card */
+.prompt-card {
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin: 2rem 0;
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.prompt-card:hover {
+  box-shadow: var(--shadow-lg);
+}
+
+.prompt-card-header {
+  background: var(--bg-subtle);
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.prompt-title-group {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.prompt-tag-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--radius-sm);
+  background: var(--wharton-navy);
+  color: #FFFFFF;
+}
+
+.prompt-title-text {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+}
+
+/* AI Model Selector Tabs */
+.ai-platform-tabs {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  overflow-x: auto;
+  padding-bottom: 0.2rem;
+  max-width: 100%;
+}
+
+.ai-tab-btn {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 0.45rem 0.85rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+.ai-tab-btn:hover {
+  border-color: var(--wharton-navy);
+  color: var(--text-primary);
+  background: var(--bg-subtle);
+}
+
+.ai-tab-btn.active {
+  background: var(--wharton-navy);
+  color: #FFFFFF !important;
+  border-color: var(--wharton-navy);
+  box-shadow: 0 2px 8px rgba(0, 45, 98, 0.25);
+}
+
+.ai-btn-icon {
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prompt-content-box {
+  padding: 1.5rem;
+  background: var(--bg-surface);
+  position: relative;
+}
+
+.prompt-code-display {
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  line-height: 1.65;
+  color: var(--text-primary);
+  white-space: pre-wrap;
+  word-break: break-word;
+  background: var(--bg-subtle);
+  padding: 1.25rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  max-height: 420px;
+  overflow-y: auto;
+}
+
+.prompt-actions-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9rem 1.25rem;
+  background: var(--bg-subtle);
+  border-top: 1px solid var(--border-color);
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.btn-copy-prompt {
+  background: linear-gradient(135deg, var(--wharton-navy) 0%, var(--hbs-crimson) 100%);
+  color: #FFFFFF;
+  border: none;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 0.55rem 1.1rem;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  transition: all var(--transition-fast);
+}
+
+.btn-copy-prompt:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(165, 28, 48, 0.3);
+}
+
+.btn-copy-prompt.copied {
+  background: #10B981;
+}
+
+.prompt-model-note {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+/* Interactive MBA Simulation & Custom Prompt Workspace */
+.simulator-workspace-card {
+  background: linear-gradient(135deg, rgba(0, 45, 98, 0.03) 0%, rgba(165, 28, 48, 0.03) 100%);
+  border: 2px dashed rgba(0, 45, 98, 0.25);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  margin: 2.5rem 0;
+}
+
+[data-theme="dark"] .simulator-workspace-card {
+  background: rgba(15, 23, 42, 0.5);
+  border-color: rgba(56, 189, 248, 0.3);
+}
+
+.sim-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.sim-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background: var(--wharton-navy);
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+}
+
+.sim-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.form-group input, .form-group select, .form-group textarea {
+  padding: 0.65rem 0.85rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  font-size: 0.875rem;
+  outline: none;
+  transition: border-color var(--transition-fast);
+}
+
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+  border-color: var(--wharton-navy);
+  box-shadow: 0 0 0 3px rgba(0, 45, 98, 0.1);
+}
+
+.sim-output-box {
+  margin-top: 1.25rem;
+  padding: 1.25rem;
+  background: var(--bg-surface);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+}
+
+/* MBA Framework Cheatsheet Cards */
+.frameworks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+  margin: 1.5rem 0 2.5rem;
+}
+
+.framework-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.35rem;
+  transition: transform var(--transition-fast), border-color var(--transition-fast);
+}
+
+.framework-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--hbs-crimson);
+}
+
+.framework-card h4 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.framework-card p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.framework-pill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.85rem;
+}
+
+.framework-pill {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.2rem 0.5rem;
+  background: var(--bg-subtle);
+  border-radius: var(--radius-sm);
+  color: var(--text-muted);
+}
+
+/* NotebookLM & Audio Overview Export Box */
+.notebooklm-export-box {
+  background: linear-gradient(135deg, rgba(79, 70, 229, 0.08) 0%, rgba(37, 99, 235, 0.04) 100%);
+  border: 1px solid rgba(79, 70, 229, 0.3);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem 1.75rem;
+  margin: 2.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.notebooklm-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: 600px;
+}
+
+.notebooklm-logo-icon {
+  width: 48px;
+  height: 48px;
+  background: #4F46E5;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  font-weight: 800;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+
+.notebooklm-text h4 {
+  font-size: 1.05rem;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.notebooklm-text p {
+  font-size: 0.825rem;
+  color: var(--text-secondary);
+}
+
+.btn-notebooklm-export {
+  background: #4F46E5;
+  color: #FFFFFF !important;
+  font-weight: 700;
+  font-size: 0.875rem;
+  padding: 0.65rem 1.25rem;
+  border-radius: var(--radius-md);
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background var(--transition-fast);
+}
+
+.btn-notebooklm-export:hover {
+  background: #4338CA;
+}
+
+/* FAQ Accordion Section for AEO */
+.faq-section {
+  margin: 3.5rem 0;
+}
+
+.faq-item {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  margin-bottom: 0.75rem;
+  overflow: hidden;
+}
+
+.faq-question-btn {
+  width: 100%;
+  padding: 1.1rem 1.35rem;
+  background: transparent;
+  border: none;
+  text-align: left;
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.faq-answer-content {
+  padding: 0 1.35rem 1.1rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.65;
+  display: none;
+}
+
+.faq-item.open .faq-answer-content {
+  display: block;
+}
+
+.faq-item.open .faq-icon-arrow {
+  transform: rotate(180deg);
+}
+
+.faq-icon-arrow {
+  transition: transform var(--transition-fast);
+  color: var(--text-muted);
+}
+
+/* Footer & Attribution */
+.site-footer {
+  background: #050811;
+  color: #94A3B8;
+  padding: 4rem 0 2.5rem;
+  border-top: 1px solid #1E293B;
+  font-size: 0.875rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 3.5rem;
+  margin-bottom: 3rem;
+}
+
+.footer-brand h3 {
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+}
+
+.footer-brand p {
+  line-height: 1.65;
+  font-size: 0.85rem;
+  max-width: 480px;
+}
+
+.footer-col h4 {
+  color: #FFFFFF;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-links a {
+  color: #94A3B8;
+  transition: color var(--transition-fast);
+}
+
+.footer-links a:hover {
+  color: #38BDF8;
+}
+
+.footer-bottom {
+  padding-top: 2rem;
+  border-top: 1px solid #1E293B;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.78rem;
+}
+
+@media (max-width: 768px) {
+  .sim-form-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .notebooklm-export-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

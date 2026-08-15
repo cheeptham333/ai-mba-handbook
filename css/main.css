@@ -1,0 +1,256 @@
+/* ==========================================================================
+   AI MBA Handbook - Core Design System & B-School CI Tokens
+   Co-Authored by Cheeptham Khamwiset & Codex
+   ========================================================================== */
+
+:root {
+  /* Elite B-School Corporate Identity (CI) Colors */
+  --hbs-crimson: #A51C30;       /* Harvard Business School Crimson */
+  --hbs-crimson-dark: #7C1322;
+  --wharton-navy: #002D62;      /* Wharton / Penn Navy Blue */
+  --wharton-navy-light: #0A4384;
+  --stanford-cardinal: #8C1D40;  /* Stanford GSB Cardinal Red */
+  --stanford-sandstone: #EAE6DF;
+  --mit-slate: #2B3A42;         /* MIT Sloan Slate Gray */
+  --mit-titanium: #475569;
+  --mit-cyan: #0284C7;          /* Modern Tech Accent */
+  
+  /* Primary & Accent Palettes */
+  --primary: var(--wharton-navy);
+  --primary-hover: var(--wharton-navy-light);
+  --accent: var(--hbs-crimson);
+  --accent-hover: var(--hbs-crimson-dark);
+  --accent-gold: #B45309;
+  --accent-gold-light: #FEF3C7;
+  
+  /* Surface & Neutral Colors (Pure Clean Light Academic Mode - Default) */
+  --bg-body: #F8FAFC;
+  --bg-surface: #FFFFFF;
+  --bg-surface-elevated: #FFFFFF;
+  --bg-sidebar: #FFFFFF;
+  --bg-subtle: #F1F5F9;
+  --bg-card: #FFFFFF;
+  --bg-highlight: #FFFBEB;
+  
+  /* High-Contrast Sharp Text Colors (Black / Deep Slate) */
+  --text-primary: #0F172A;      /* Pure Deep Slate Black */
+  --text-secondary: #1E293B;    /* Crisp Dark Charcoal */
+  --text-muted: #64748B;        /* Cool Gray */
+  --text-inverse: #FFFFFF;
+  --text-accent: var(--hbs-crimson);
+  --border-color: #E2E8F0;
+  --border-light: #F1F5F9;
+  --border-focus: var(--wharton-navy);
+
+  /* AI Platform Brand Colors */
+  --ai-gemini: #1D4ED8;
+  --ai-notebooklm: #4338CA;
+  --ai-claude: #B45309;
+  --ai-grok: #0F172A;
+  --ai-copilot: #0369A1;
+  --ai-perplexity: #0F766E;
+  --ai-chatgpt: #059669;
+
+  /* Typography */
+  --font-body: 'Sarabun', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: 'Inter', 'Sarabun', sans-serif;
+  --font-serif: Georgia, 'Times New Roman', serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  /* Elevation & Shadows */
+  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.06), 0 1px 2px 0 rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+  --shadow-book: 0 20px 35px -8px rgba(0, 45, 98, 0.25);
+
+  /* Transitions & Radii */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: 350ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Optional Dark Mode (Available if toggled) */
+[data-theme="dark"] {
+  --bg-body: #090D16;
+  --bg-surface: #0F172A;
+  --bg-surface-elevated: #1E293B;
+  --bg-sidebar: #0F172A;
+  --bg-subtle: #1E293B;
+  --bg-card: #0F172A;
+  --bg-highlight: #2A2415;
+  
+  --text-primary: #F8FAFC;
+  --text-secondary: #CBD5E1;
+  --text-muted: #94A3B8;
+  --text-inverse: #0F172A;
+  --text-accent: #F87171;
+  
+  --border-color: #334155;
+  --border-light: #1E293B;
+  --border-focus: #38BDF8;
+
+  --shadow-book: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+}
+
+/* Reset & Base Styles */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-body);
+  color: var(--text-primary);
+  line-height: 1.7;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  overflow-x: hidden;
+  transition: background-color var(--transition-normal), color var(--transition-normal);
+}
+
+/* Reading Font Scaling */
+body.font-sm { font-size: 14.5px; }
+body.font-md { font-size: 16px; }
+body.font-lg { font-size: 17.5px; }
+body.font-xl { font-size: 19px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--text-primary);
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.015em;
+}
+
+a {
+  color: var(--wharton-navy-light);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+[data-theme="dark"] a {
+  color: #38BDF8;
+}
+
+a:hover {
+  color: var(--hbs-crimson);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-subtle);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--mit-titanium);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--wharton-navy);
+}
+
+/* Utility Containers */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Elite CI Badges */
+.badge-school {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.badge-hbs {
+  background: #FFF1F2;
+  color: #9F1239;
+  border: 1px solid #FDA4AF;
+}
+
+.badge-wharton {
+  background: #EFF6FF;
+  color: #002D62;
+  border: 1px solid #93C5FD;
+}
+
+.badge-stanford {
+  background: #FFF1F2;
+  color: #8C1D40;
+  border: 1px solid #FECDD3;
+}
+
+.badge-mit {
+  background: #F1F5F9;
+  color: #0F172A;
+  border: 1px solid #CBD5E1;
+}
+
+[data-theme="dark"] .badge-hbs { background: rgba(225, 29, 72, 0.15); color: #FFA4B1; border-color: rgba(255, 164, 177, 0.3); }
+[data-theme="dark"] .badge-wharton { background: rgba(37, 99, 235, 0.15); color: #93C5FD; border-color: rgba(147, 197, 253, 0.3); }
+[data-theme="dark"] .badge-stanford { background: rgba(225, 29, 72, 0.15); color: #FCA5A5; border-color: rgba(252, 165, 165, 0.3); }
+[data-theme="dark"] .badge-mit { background: rgba(100, 116, 139, 0.15); color: #38BDF8; border-color: rgba(56, 189, 248, 0.3); }
+
+/* Global Toast Notification */
+.toast {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: #0F172A;
+  color: #FFFFFF;
+  padding: 0.9rem 1.4rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-xl);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  z-index: 9999;
+  font-weight: 500;
+  font-size: 0.925rem;
+  transform: translateY(120%);
+  opacity: 0;
+  transition: transform var(--transition-smooth), opacity var(--transition-smooth);
+  border-left: 4px solid var(--accent-gold);
+}
+
+.toast.show {
+  transform: translateY(0);
+  opacity: 1;
+}
