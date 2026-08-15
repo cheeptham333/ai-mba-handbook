@@ -211,6 +211,16 @@ for idx, ch in enumerate(chapters):
 with open('index.html', 'r', encoding='utf-8') as f:
     old_html = f.read()
 
+# Read all CSS files to embed directly inline for 100% guaranteed rendering on Vercel/GitHub
+with open('css/main.css', 'r', encoding='utf-8') as f:
+    main_css = f.read()
+with open('css/reader.css', 'r', encoding='utf-8') as f:
+    reader_css = f.read()
+with open('css/components.css', 'r', encoding='utf-8') as f:
+    components_css = f.read()
+
+all_css_content = main_css + "\n" + reader_css + "\n" + components_css
+
 # Build full index.html
 new_html_content = f'''<!DOCTYPE html>
 <html lang="th" data-theme="light">
@@ -285,7 +295,12 @@ new_html_content = f'''<!DOCTYPE html>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sarabun:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
-  <!-- Core Stylesheets -->
+  <!-- Embedded Bundled CSS (100% Guaranteed Load on Vercel, GitHub Pages & Offline) -->
+  <style>
+  {all_css_content}
+  </style>
+
+  <!-- Fallback External Stylesheets -->
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/reader.css">
   <link rel="stylesheet" href="css/components.css">
