@@ -1,6 +1,8 @@
-# AI MBA Handbook: Full Knowledge Base
-ผู้เขียน: ชีพธรรม คำวิเศษณ์ ร่วมกับ Codex
-อัตลักษณ์และองค์ความรู้: Harvard Business School, MIT Sloan, Stanford GSB, Wharton
+# AI MBA Handbook & Prompt Studio: Full Knowledge Base
+ผู้เขียนและผู้ออกแบบ: อาจารย์ชีพธรรม คำวิเศษณ์ (Cheeptham Khamwiset) — ผู้บุกเบิกและโค้ชชิ่ง AI สาย MBA บริหารธุรกิจอันดับ 1 ของประเทศไทย ร่วมกับ FastAI Team
+อัตลักษณ์และองค์ความรู้: Harvard Business School (HBS), The Wharton School, Stanford GSB, MIT Sloan
+เว็บแอปพลิเคชันหลัก: https://aimba.cheeptham.com/
+สตูดิโอ Interactive Prompt Lab (RTCF): https://aimba.cheeptham.com/prompt-lab.html
 
 ================================================================================
 MODULE 1: Strategic Leadership & Business Agility (HBS & Stanford GSB)

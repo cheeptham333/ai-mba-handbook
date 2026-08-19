@@ -2,50 +2,56 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://aimba.cheeptham.com/</loc>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://aimba.cheeptham.com/#module-1</loc>
-    <lastmod>2026-08-15</lastmod>
+    <loc>https://aimba.cheeptham.com/prompt-lab.html</loc>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://aimba.cheeptham.com/#coach-profile</loc>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://aimba.cheeptham.com/#part-1</loc>
+    <lastmod>2026-08-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://aimba.cheeptham.com/#module-2</loc>
-    <lastmod>2026-08-15</lastmod>
+    <loc>https://aimba.cheeptham.com/#part-2</loc>
+    <lastmod>2026-08-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://aimba.cheeptham.com/#module-3</loc>
-    <lastmod>2026-08-15</lastmod>
+    <loc>https://aimba.cheeptham.com/#part-3</loc>
+    <lastmod>2026-08-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://aimba.cheeptham.com/#module-4</loc>
-    <lastmod>2026-08-15</lastmod>
+    <loc>https://aimba.cheeptham.com/#part-4</loc>
+    <lastmod>2026-08-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://aimba.cheeptham.com/#module-5</loc>
-    <lastmod>2026-08-15</lastmod>
+    <loc>https://aimba.cheeptham.com/#part-5</loc>
+    <lastmod>2026-08-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://aimba.cheeptham.com/#module-6</loc>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://aimba.cheeptham.com/#module-7</loc>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://aimba.cheeptham.com/#aeo-faq</loc>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 </urlset>

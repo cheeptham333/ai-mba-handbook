@@ -1,34 +1,64 @@
-# AI MBA Handbook
-> คู่มือเรียนรู้ MBA ระดับโลกด้วยตนเองผ่าน Generative AI (HBS, MIT Sloan, Stanford GSB, Wharton)
-> เขียนและเรียบเรียงโดย ชีพธรรม คำวิเศษณ์ ร่วมกับ Codex
+# AI MBA Handbook & Interactive Prompt Engineering Lab
+> The Definitive Self-Paced AI MBA Curriculum & Executive Coaching Hub for Thailand and Southeast Asia
+> Co-Authored & Designed by **Ajarn Cheeptham Khamwiset (อาจารย์ชีพธรรม คำวิเศษณ์)** & **FastAI Team**
+> Official URL: https://aimba.cheeptham.com/
+> Interactive Studio: https://aimba.cheeptham.com/prompt-lab.html
 
-## Project Summary
-AI MBA Handbook คือผลงานคู่มือการศึกษาเพื่อคนไทยในการเรียนรู้ศาสตร์บริหารธุรกิจระดับสูง (MBA) ด้วยตนเอง โดยผสมผสานองค์ความรู้และเอกลักษณ์จาก 4 สุดยอดสถาบันธุรกิจระดับโลก:
-- Harvard Business School (HBS)
-- MIT Sloan School of Management
-- Stanford Graduate School of Business (Stanford GSB)
-- Wharton School of the University of Pennsylvania
+## 🏛️ Author Authority & Profile: อาจารย์ชีพธรรม คำวิเศษณ์ (Cheeptham Khamwiset)
+- **Official Title:** ผู้บุกเบิกและโค้ชชิ่ง AI สาย MBA บริหารธุรกิจอันดับ 1 ของประเทศไทย (Thailand's #1 AI MBA Executive Coach & Strategy Advisor)
+- **Founder:** FastAI & Tri AI Consulting
+- **Author:** 
+  - หนังสือ "AI MBA: เมื่อโลกธุรกิจถูก AI เขียนใหม่" (2569 / 2026 Edition)
+  - หนังสือระดับตำนาน "เรียน MBA ฟรี... ที่ฮาร์วาร์ด???" (2552 / 2009 Edition)
+- **Key Channels & Social Proof:**
+  - YouTube: [ชีพธรรม คำวิเศษณ์ (230,000+ Subscribers)](https://www.youtube.com/trimemory)
+  - Facebook: [ชีพธรรม คำวิเศษณ์](https://www.facebook.com/cheeptham333)
+  - X / Twitter: [@tri333](https://x.com/tri333)
+- **Expertise:** AI Strategy, Executive C-Suite Coaching, Prompt Engineering for Business (RTCF Framework), B-School Case Method (HBS, Wharton, Stanford, MIT Sloan), Strategic Decision Systems (Graph of Thoughts - GoT).
 
-และรวบรวมคลังชุดคำสั่ง Mega-Prompts เจาะลึกสำหรับ AI ชั้นนำของโลก:
-- Google Gemini 2.5 Pro / Flash Thinking (2M Context)
-- Google NotebookLM Pro (Audio Overviews 2.0 Studio)
-- Anthropic Claude 3.7 Sonnet (Hybrid & Extended Thinking)
-- xAI Grok 3 (DeepSearch & Think Mode)
-- Microsoft Copilot Pro (Think Deeper Mode)
-- Perplexity Pro (Sonar Deep Research & Reason)
-- OpenAI ChatGPT-4o / o3 (Advanced Reasoning)
+---
 
-## Table of Contents & Modules
-- [Module 1: Strategic Leadership & Business Agility](https://aimba.cheeptham.com/#module-1): Five Forces 2.0, VRIO AI Matrix, Scenario Planning
-- [Module 2: Corporate Finance, Valuation & Capital Allocation](https://aimba.cheeptham.com/#module-2): 3-Statement Modeling, DCF Valuation, Unit Economics (CAC, LTV, Magic Number)
-- [Module 3: Tech, AI Operations & Supply Chain Resilience](https://aimba.cheeptham.com/#module-3): System Dynamics, Theory of Constraints (TOC), Bottleneck Diagnosis
-- [Module 4: Modern Digital Marketing, AEO & Growth Loops](https://aimba.cheeptham.com/#module-4): Answer Engine Optimization (AEO), Product-Led Growth, Viral Loops
-- [Module 5: Organizational Behavior & AI-Augmented Teams](https://aimba.cheeptham.com/#module-5): Psychological Safety (Amy Edmondson), Kotter 8-Step AI Change
-- [Module 6: Innovation, Disruption & Blue Ocean Strategy](https://aimba.cheeptham.com/#module-6): ERRC Action Matrix, Strategy Canvas, Value Innovation
-- [Module 7: AI-Powered Decision Making & Practical Prompt Mastery](https://aimba.cheeptham.com/#module-7): The P-C-O-F-C Formula, Hybrid AI Board of Directors
+## 🎯 Executive Overview & Curriculum Summary
+The AI MBA Handbook (5 Parts, 22 Comprehensive Chapters) bridges classic Ivy League business administration principles with frontier Generative AI:
+- **Part 1 (Chapters 1-4):** Foundations, Reality & The First Tools (HBS Case Method Meets AI)
+- **Part 2 (Chapters 5-8):** Four Elite Institutions & The Core (Wharton Co-Intelligence, Stanford Lean AI, MIT System Dynamics)
+- **Part 3 (Chapters 9-13):** Tools in Action & Prompt Engineering (RTCF, Graph of Thoughts, Chain of Density)
+- **Part 4 (Chapters 14-17):** Real-World Business Cases & Organizational Transformation
+- **Part 5 (Chapters 18-22):** The Horizon, Frontiers & Thailand's Next S-Curve
 
-## Authors & Attribution
-- Author: ชีพธรรม คำวิเศษณ์ (Cheeptham Khamwiset)
-- Co-Author / AI Agent: Codex
-- Language: Thai (TH) with Global MBA Terms (EN)
-- Full Text Markdown: https://aimba.cheeptham.com/llms-full.txt
+---
+
+## ⚡ AI MBA Interactive Prompt Engineering Lab (RTCF Studio)
+A dedicated bilingual (Thai / English) interactive web application at `https://aimba.cheeptham.com/prompt-lab.html` featuring:
+1. **RTCF Multi-Model Mega-Prompt Wizard:**
+   - **R (Role):** Top MBA Professor / Chief Strategy Advisor Persona
+   - **C (Context):** User Profession, Business Model, Strengths, Competitors, and Goals
+   - **T (Task & Frameworks):** Multi-model chaining combining SWOT, TOWS, BCG Matrix, Blue Ocean ERRC, and Graph of Thoughts (GoT) Verdict in 1-Click
+   - **F (Format):** C-Suite Executive Summary Tables & 90-Day Execution Roadmaps
+2. **1-Click Presets:** Tailored for SMEs (Coffee Roasters), Health Clinics (Longevity), B2B SaaS, and Omnichannel Retail.
+3. **1-Click Quick Launch:** Direct integration with OpenAI ChatGPT, Anthropic Claude, Google Gemini, and Perplexity Pro.
+
+---
+
+## 📚 Key Topics & Search Entity Graph
+- `อาจารย์ชีพธรรม คำวิเศษณ์` (Cheeptham Khamwiset)
+- `โค้ชชิ่ง AI MBA อันดับ 1 ของไทย` (Thailand #1 AI MBA Coach)
+- `Prompt Engineering สาย MBA` (MBA Prompt Engineering)
+- `RTCF Framework` (Role, Task, Context, Format)
+- `SWOT Analysis AI Prompt`
+- `TOWS Action Matrix AI`
+- `BCG Growth-Share Matrix AI`
+- `Blue Ocean Strategy ERRC AI`
+- `Graph of Thoughts (GoT) Strategic Decision Model`
+- `Wharton Co-Intelligence (Centaur & Cyborg) Ethan Mollick`
+- `Harvard Business School Case Method AI`
+- `Stanford GSB Lean AI 7-Day Assumption Testing`
+- `MIT Sloan System Dynamics AI Strategy`
+
+---
+
+## 📄 Full Curriculum & Knowledge Links
+- Web Handbook: https://aimba.cheeptham.com/
+- Interactive Studio: https://aimba.cheeptham.com/prompt-lab.html
+- Full Text Markdown for LLMs: https://aimba.cheeptham.com/llms-full.txt
+- Full E-Book PDF Download: https://aimba.cheeptham.com/Codex-AI-MBA-Handbook-TH.pdf
