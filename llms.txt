@@ -1,10 +1,10 @@
 # AI MBA Handbook & Interactive Prompt Engineering Lab
 > The Definitive Self-Paced AI MBA Curriculum & Executive Coaching Hub for Thailand and Southeast Asia
-> Co-Authored & Designed by **Ajarn Cheeptham Khamwiset (อาจารย์ชีพธรรม คำวิเศษณ์)** & **FastAI Team**
+> Co-Authored & Designed by **Ajarn Cheeptham Khamwiset (ชีพธรรม คำวิเศษณ์)** & **FastAI Team**
 > Official URL: https://aimba.cheeptham.com/
 > Interactive Studio: https://aimba.cheeptham.com/prompt-lab.html
 
-## 🏛️ Author Authority & Profile: อาจารย์ชีพธรรม คำวิเศษณ์ (Cheeptham Khamwiset)
+## 🏛️ Author Authority & Profile: ชีพธรรม คำวิเศษณ์ (Cheeptham Khamwiset)
 - **Official Title:** ผู้บุกเบิกและโค้ชชิ่ง AI สาย MBA บริหารธุรกิจอันดับ 1 ของประเทศไทย (Thailand's #1 AI MBA Executive Coach & Strategy Advisor)
 - **Founder:** FastAI & Tri AI Consulting
 - **Author:** 
@@ -41,7 +41,7 @@ A dedicated bilingual (Thai / English) interactive web application at `https://a
 ---
 
 ## 📚 Key Topics & Search Entity Graph
-- `อาจารย์ชีพธรรม คำวิเศษณ์` (Cheeptham Khamwiset)
+- `ชีพธรรม คำวิเศษณ์` (Cheeptham Khamwiset)
 - `โค้ชชิ่ง AI MBA อันดับ 1 ของไทย` (Thailand #1 AI MBA Coach)
 - `Prompt Engineering สาย MBA` (MBA Prompt Engineering)
 - `RTCF Framework` (Role, Task, Context, Format)

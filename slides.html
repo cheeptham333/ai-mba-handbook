@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="th" data-font-size="senior">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>AI MBA Executive Masterclass — สไลด์บรรยายตัวอักษรใหญ่พิเศษ (วัย 60+ อ่านสบายตา)</title>
+  
+  <!-- Google Fonts: Sarabun, Inter, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Sarabun:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      /* High Contrast Color Palette for Maximum Legibility */
+      --bg-body: #E2E8F0;
+      --bg-slide: #FFFFFF;
+      --bg-card: #FFFFFF;
+      --bg-card-subtle: #F8FAFC;
+      --border-strong: #0F172A;
+      --border-medium: #475569;
+      --border-light: #CBD5E1;
+      
+      --text-primary: #0A0F1D;
+      --text-secondary: #1E293B;
+      --text-muted: #475569;
+      
+      --hbs-crimson: #8B0000;
+      --hbs-crimson-dark: #660000;
+      --wharton-navy: #002C77;
+      --stanford-cardinal: #8C1515;
+      --mit-maroon: #7A0019;
+      --accent-gold: #92400E;
+      --accent-emerald: #065F46;
+      --accent-blue: #0369A1;
+
+      /* Base Font Scale (Default: Senior 60+ Edition) */
+      --font-scale: 1.28;
+    }
+
+    /* Font Size Presets */
+    html[data-font-size="standard"] { --font-scale: 1.0; }
+    html[data-font-size="senior"] { --font-scale: 1.28; }
+    html[data-font-size="ultra"] { --font-scale: 1.48; }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Sarabun', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg-body);
+      color: var(--text-primary);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      height: 100vh;
+      overflow: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Top Control Bar */
+    .topbar {
+      height: 64px;
+      background: #FFFFFF;
+      border-bottom: 2.5px solid var(--border-strong);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 1.25rem;
+      color: var(--text-primary);
+      z-index: 100;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      flex-shrink: 0;
+    }
+
+    .brand-title-group {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .brand-logo-img {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      object-fit: cover;
+      border: 1.5px solid var(--border-medium);
+    }
+
+    .brand-title {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--hbs-crimson);
+      display: flex;
+      flex-direction: column;
+      line-height: 1.2;
+    }
+
+    .brand-title span.sub {
+      font-size: 0.78rem;
+      color: var(--text-secondary);
+      font-weight: 700;
+    }
+
+    .controls-bar {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-nav {
+      background: #FFFFFF;
+      border: 2px solid var(--border-strong);
+      color: var(--text-primary);
+      padding: 7px 14px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 0.95rem;
+      font-weight: 800;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: all 0.15s ease;
+      user-select: none;
+    }
+
+    .btn-nav:hover {
+      background: #0F172A;
+      color: #FFFFFF;
+      border-color: #0F172A;
+      transform: translateY(-1px);
+    }
+
+    .btn-nav-primary {
+      background: var(--hbs-crimson);
+      color: #FFFFFF;
+      border-color: var(--hbs-crimson-dark);
+    }
+
+    .btn-nav-primary:hover {
+      background: var(--hbs-crimson-dark);
+      color: #FFFFFF;
+    }
+
+    .slide-counter-badge {
+      font-weight: 800;
+      color: var(--wharton-navy);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 1.1rem;
+      padding: 4px 12px;
+      background: #F1F5F9;
+      border: 2px solid var(--border-strong);
+      border-radius: 8px;
+      min-width: 90px;
+      text-align: center;
+    }
+
+    /* Font Resizer Segmented Control */
+    .font-resizer-group {
+      display: flex;
+      align-items: center;
+      background: #F1F5F9;
+      border: 2px solid var(--border-strong);
+      border-radius: 8px;
+      padding: 2px;
+      gap: 2px;
+    }
+
+    .btn-font-scale {
+      padding: 4px 10px;
+      font-size: 0.85rem;
+      font-weight: 800;
+      border-radius: 6px;
+      border: none;
+      background: transparent;
+      color: var(--text-secondary);
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .btn-font-scale.active {
+      background: var(--wharton-navy);
+      color: #FFFFFF;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Stage Area */
+    .stage-container {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.25rem;
+      position: relative;
+      overflow-y: auto;
+    }
+
+    /* Slide Frame - Large Senior Format */
+    .slide-frame {
+      width: 100%;
+      max-width: 1420px;
+      min-height: calc(100vh - 100px);
+      max-height: calc(100vh - 100px);
+      background: var(--bg-slide);
+      border: 3.5px solid var(--border-strong);
+      border-radius: 16px;
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.22);
+      display: none;
+      flex-direction: column;
+      position: relative;
+      overflow-y: auto;
+      padding: calc(2.2rem * var(--font-scale) * 0.7) calc(2.8rem * var(--font-scale) * 0.7);
+      transition: font-size 0.2s ease;
+    }
+
+    .slide-frame.active {
+      display: flex;
+      animation: slideFadeIn 0.25s ease-out;
+    }
+
+    @keyframes slideFadeIn {
+      from { opacity: 0; transform: scale(0.985); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    /* Module Badge */
+    .module-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: calc(0.95rem * var(--font-scale));
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+      color: var(--hbs-crimson);
+      background: #FEE2E2;
+      border: 2px solid var(--hbs-crimson);
+      padding: 0.25rem 0.85rem;
+      border-radius: 9999px;
+      align-self: flex-start;
+    }
+
+    /* Slide Title */
+    .action-title {
+      font-size: calc(1.75rem * var(--font-scale));
+      font-weight: 800;
+      line-height: 1.28;
+      margin-bottom: calc(1.1rem * var(--font-scale) * 0.8);
+      padding-bottom: 0.65rem;
+      border-bottom: 3px solid var(--border-strong);
+      color: var(--text-primary);
+      letter-spacing: -0.01em;
+    }
+
+    /* Grid Layouts for Cards */
+    .cards-grid {
+      display: grid;
+      gap: calc(1.25rem * var(--font-scale) * 0.8);
+      flex: 1;
+      align-content: stretch;
+    }
+
+    .grid-2 { grid-template-columns: 1fr 1fr; }
+    .grid-3 { grid-template-columns: 1fr 1fr 1fr; }
+    .grid-4 { grid-template-columns: 1fr 1fr; }
+    .grid-5 { grid-template-columns: repeat(3, 1fr); }
+
+    /* Card Item (Extra Large & Senior Readable) */
+    .card {
+      border-radius: 12px;
+      padding: calc(1.35rem * var(--font-scale) * 0.8);
+      display: flex;
+      flex-direction: column;
+      border: 2.5px solid var(--border-strong);
+      background: #FFFFFF;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    }
+
+    .card-badge {
+      font-size: calc(0.9rem * var(--font-scale));
+      font-weight: 800;
+      margin-bottom: 0.35rem;
+      display: inline-block;
+      text-transform: uppercase;
+    }
+
+    .card-title {
+      font-size: calc(1.35rem * var(--font-scale));
+      font-weight: 800;
+      margin-bottom: 0.75rem;
+      line-height: 1.3;
+      color: var(--text-primary);
+    }
+
+    .card-list {
+      list-style: none;
+      font-size: calc(1.15rem * var(--font-scale));
+      font-weight: 700;
+      line-height: 1.65;
+      color: var(--text-secondary);
+    }
+
+    .card-list li {
+      margin-bottom: 0.65rem;
+      padding-left: 1.6rem;
+      position: relative;
+    }
+
+    .card-list li:last-child {
+      margin-bottom: 0;
+    }
+
+    .card-list li::before {
+      content: "▶";
+      position: absolute;
+      left: 0;
+      color: var(--hbs-crimson);
+      font-size: calc(0.95rem * var(--font-scale));
+      top: 2px;
+    }
+
+    /* Prompt Box Engine */
+    .prompt-box {
+      background: #0F172A;
+      border: 3px solid var(--border-strong);
+      border-radius: 12px;
+      padding: calc(1.6rem * var(--font-scale) * 0.8);
+      color: #F8FAFC;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: calc(1.12rem * var(--font-scale));
+      font-weight: 700;
+      line-height: 1.7;
+      white-space: pre-wrap;
+      overflow-y: auto;
+      flex: 1;
+      box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.4);
+    }
+
+    .prompt-box-header {
+      color: #38BDF8;
+      font-size: calc(1.2rem * var(--font-scale));
+      font-weight: 800;
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1.5px solid #334155;
+    }
+
+    /* Hero Slide Center */
+    .hero-center {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex: 1;
+      gap: 1.25rem;
+      padding: 1rem 0;
+    }
+
+    .hero-title {
+      font-size: calc(2.8rem * var(--font-scale));
+      font-weight: 800;
+      line-height: 1.22;
+      color: var(--text-primary);
+      letter-spacing: -0.02em;
+    }
+
+    .hero-sub {
+      font-size: calc(1.45rem * var(--font-scale));
+      font-weight: 700;
+      color: var(--text-secondary);
+      max-width: 1050px;
+      line-height: 1.5;
+    }
+
+    .hero-gold {
+      font-size: calc(1.5rem * var(--font-scale));
+      color: var(--accent-gold);
+      font-weight: 800;
+      background: #FEF3C7;
+      border: 2.5px solid #D97706;
+      padding: 0.85rem 1.85rem;
+      border-radius: 12px;
+      line-height: 1.45;
+      max-width: 1000px;
+    }
+
+    .author-card-hero {
+      background: #F8FAFC;
+      border: 2.5px solid var(--border-strong);
+      padding: 1rem 2rem;
+      border-radius: 12px;
+      margin-top: 0.5rem;
+    }
+
+    /* Notes Drawer */
+    .notes-drawer {
+      height: 160px;
+      background: #FFFFFF;
+      border-top: 3px solid var(--border-strong);
+      padding: 1rem 1.5rem;
+      color: var(--text-primary);
+      font-size: calc(1.05rem * var(--font-scale) * 0.9);
+      font-weight: 700;
+      overflow-y: auto;
+      display: none;
+      box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.1);
+      flex-shrink: 0;
+    }
+
+    .notes-drawer.open {
+      display: block;
+    }
+
+    .notes-header {
+      font-weight: 800;
+      color: var(--hbs-crimson);
+      margin-bottom: 0.4rem;
+      font-size: 1.15rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    /* Print Handout Optimization */
+    @media print {
+      body {
+        background: #FFFFFF;
+        height: auto;
+        overflow: visible;
+      }
+      .topbar, .notes-drawer {
+        display: none !important;
+      }
+      .stage-container {
+        padding: 0;
+        display: block;
+      }
+      .slide-frame {
+        display: flex !important;
+        page-break-after: always;
+        box-shadow: none;
+        border: 2px solid #000000;
+        min-height: 96vh;
+        max-height: 96vh;
+        margin-bottom: 2rem;
+      }
+    }
+
+    /* Responsive for Tablets / Laptops */
+    @media (max-width: 1024px) {
+      .grid-3 { grid-template-columns: 1fr; }
+      .grid-4 { grid-template-columns: 1fr; }
+      .grid-2 { grid-template-columns: 1fr; }
+      .slide-frame {
+        max-height: none;
+        min-height: auto;
+        padding: 1.5rem;
+      }
+      body {
+        height: auto;
+        overflow-y: auto;
+      }
+      .topbar {
+        height: auto;
+        padding: 0.75rem 1rem;
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation & Presentation Controls -->
+  <header class="topbar">
+    <div class="brand-title-group">
+      <img src="AI MBA.png" alt="AI MBA Logo" class="brand-logo-img">
+      <div class="brand-title">
+        <span>AI MBA Executive Masterclass</span>
+        <span class="sub">ฉบับตัวอักษรใหญ่พิเศษ (Senior Executive 60+ Edition • อ่านสบายตาไม่ต้องใส่แว่น)</span>
+      </div>
+    </div>
+
+    <div class="controls-bar">
+      <!-- Navigation Buttons -->
+      <button class="btn-nav" onclick="prevSlide()" title="สไลด์ก่อนหน้า (Arrow Left / Page Up)">
+        ◀ ย้อนกลับ
+      </button>
+      <span class="slide-counter-badge" id="slideCounter">1 / 36</span>
+      <button class="btn-nav" onclick="nextSlide()" title="สไลด์ถัดไป (Arrow Right / Spacebar)">
+        ถัดไป ▶
+      </button>
+
+      <!-- Font Size Resizer Controls -->
+      <div class="font-resizer-group" title="ปรับขนาดตัวอักษรสำหรับผู้บริหาร">
+        <button class="btn-font-scale" onclick="setFontScale('standard')" id="btnFontStandard">ปกติ</button>
+        <button class="btn-font-scale active" onclick="setFontScale('senior')" id="btnFontSenior">🔍 ใหญ่ 60+ (แนะนำ)</button>
+        <button class="btn-font-scale" onclick="setFontScale('ultra')" id="btnFontUltra">🔎 ใหญ่ยักษ์ (Ultra)</button>
+      </div>
+
+      <!-- Fullscreen / Presentation Mode -->
+      <button class="btn-nav" onclick="toggleFullscreen()" id="btnFullscreen" title="โหมดนำเสนอเต็มจอ">
+        ⛶ เต็มจอ
+      </button>
+
+      <!-- Speaker Notes -->
+      <button class="btn-nav" onclick="toggleNotes()" title="เปิด/ปิด บทพูดผู้สอน (กดคีย์บอร์ด N)">
+        🎙️ โน้ตผู้สอน
+      </button>
+
+      <!-- Print Handout -->
+      <button class="btn-nav" onclick="window.print()" title="พิมพ์เอกสารแจก">
+        🖨️ พิมพ์
+      </button>
+
+      <!-- Download Formats -->
+      <a href="AI_MBA_Executive_Masterclass.key" download class="btn-nav" style="background:#0284C7; color:#FFFFFF; border-color:#0369A1;" title="ดาวน์โหลดไฟล์ Keynote สำหรับ Mac">
+        📥 Keynote
+      </a>
+      <a href="AI_MBA_Executive_Masterclass.pdf" download class="btn-nav btn-nav-primary" title="ดาวน์โหลดไฟล์ PDF เอกสารแจก">
+        📥 PDF
+      </a>
+      <a href="AI_MBA_Executive_Masterclass.pptx" download class="btn-nav" style="background:#0F172A; color:#FFFFFF; border-color:#0F172A;" title="ดาวน์โหลดไฟล์ PowerPoint">
+        📥 PPTX
+      </a>
+    </div>
+  </header>
+
+  <!-- Slide Stage Container -->
+  <main class="stage-container" id="stage">
+    <!-- Rendered dynamically via JavaScript -->
+  </main>
+
+  <!-- Speaker Notes Drawer -->
+  <aside class="notes-drawer" id="notesDrawer">
+    <div class="notes-header">
+      <span>🎙️</span> Speaker Notes (บทพูดและประเด็นโค้ชชิ่งสำหรับผู้สอน / ชีพธรรม คำวิเศษณ์):
+    </div>
+    <div id="notesContent" style="white-space: pre-wrap; line-height: 1.6; color: var(--text-secondary);"></div>
+  </aside>
+
+  <!-- Slide Data & Logic -->
+  <script src="js/data/masterclass_slides_data.js"></script>
+  <script>
+    let currentSlide = 0;
+    const stage = document.getElementById('stage');
+    const counter = document.getElementById('slideCounter');
+    const notesContent = document.getElementById('notesContent');
+    const notesDrawer = document.getElementById('notesDrawer');
+
+    // Font Scale Switcher
+    function setFontScale(mode) {
+      document.documentElement.setAttribute('data-font-size', mode);
+      localStorage.setItem('aimba_slide_font_mode', mode);
+      
+      document.getElementById('btnFontStandard').classList.toggle('active', mode === 'standard');
+      document.getElementById('btnFontSenior').classList.toggle('active', mode === 'senior');
+      document.getElementById('btnFontUltra').classList.toggle('active', mode === 'ultra');
+    }
+
+    // Restore saved font preference
+    const savedMode = localStorage.getItem('aimba_slide_font_mode') || 'senior';
+    setFontScale(savedMode);
+
+    // Fullscreen Toggle
+    function toggleFullscreen() {
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen().catch(err => {
+          console.warn('Fullscreen request failed:', err);
+        });
+      } else {
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+        }
+      }
+    }
+
+    // Render Slide
+    function renderSlide() {
+      const data = SLIDES_DATA[currentSlide];
+      counter.innerText = `${currentSlide + 1} / ${SLIDES_DATA.length}`;
+      notesContent.innerText = data.notes || '(ไม่มีบันทึกเฉพาะสไลด์นี้)';
+
+      let html = '';
+      if (data.type === 'hero') {
+        html = `
+          <div class="slide-frame active">
+            <div class="hero-center">
+              <div class="module-badge">${data.badge}</div>
+              <h1 class="hero-title">${data.title}</h1>
+              ${data.subtitle ? `<div class="hero-sub">${data.subtitle}</div>` : ''}
+              ${data.quote ? `<div class="hero-gold">${data.quote}</div>` : ''}
+              ${data.author ? `
+                <div class="author-card-hero">
+                  <strong style="color: var(--hbs-crimson); font-size: calc(1.45rem * var(--font-scale)); display: block; margin-bottom: 4px;">${data.author}</strong>
+                  <span style="color: #1E293B; font-size: calc(1.15rem * var(--font-scale)); font-weight: 700;">${data.credentials}</span>
+                </div>
+              ` : ''}
+              ${data.cards ? `
+                <div class="cards-grid grid-3" style="width: 100%; margin-top: 1rem;">
+                  ${data.cards.map(c => `
+                    <div class="card" style="text-align: left;">
+                      <div class="card-badge" style="color: var(--hbs-crimson);">${c.badge}</div>
+                      <div class="card-title" style="color: var(--text-primary);">${c.title}</div>
+                      <div style="font-size: calc(1.1rem * var(--font-scale)); color: var(--text-secondary); line-height: 1.65; font-weight: 700;">${c.items.join('<br>')}</div>
+                    </div>
+                  `).join('')}
+                </div>
+              ` : ''}
+            </div>
+          </div>
+        `;
+      } else if (data.type === 'prompt') {
+        html = `
+          <div class="slide-frame active">
+            <div class="module-badge">${data.badge} | STRATEGIC PROMPT ENGINE</div>
+            <h2 class="action-title">${data.title}</h2>
+            <div class="prompt-box">
+              <div class="prompt-box-header">⚡ LIVE PROMPT LAB ENGINE: ${data.promptTitle}</div>
+${data.promptText}
+            </div>
+          </div>
+        `;
+      } else {
+        const gridClass = `grid-${data.cards.length <= 2 ? 2 : data.cards.length === 3 ? 3 : data.cards.length === 4 ? 4 : 5}`;
+        html = `
+          <div class="slide-frame active">
+            <div class="module-badge">${data.badge} | STRATEGIC WORKSHOP MANUAL</div>
+            <h2 class="action-title">${data.title}</h2>
+            <div class="cards-grid ${gridClass}">
+              ${data.cards.map(c => `
+                <div class="card">
+                  ${c.badge ? `<div class="card-badge" style="color: ${c.color || 'var(--hbs-crimson)'};">[${c.badge}]</div>` : ''}
+                  <div class="card-title" style="color: ${c.color || 'var(--text-primary)'};">${c.title}</div>
+                  <ul class="card-list">
+                    ${c.items.map(it => `<li>${it}</li>`).join('')}
+                  </ul>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        `;
+      }
+      stage.innerHTML = html;
+    }
+
+    function nextSlide() {
+      if (currentSlide < SLIDES_DATA.length - 1) {
+        currentSlide++;
+        renderSlide();
+      }
+    }
+
+    function prevSlide() {
+      if (currentSlide > 0) {
+        currentSlide--;
+        renderSlide();
+      }
+    }
+
+    function toggleNotes() {
+      notesDrawer.classList.toggle('open');
+    }
+
+    // Keyboard Shortcuts
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') {
+        e.preventDefault();
+        nextSlide();
+      }
+      if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
+        e.preventDefault();
+        prevSlide();
+      }
+      if (e.key === 'n' || e.key === 'N') {
+        toggleNotes();
+      }
+      if (e.key === 'f' || e.key === 'F') {
+        toggleFullscreen();
+      }
+    });
+
+    // Touch Swipe Support for Tablets / iPads
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    document.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    document.addEventListener('touchend', (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      if (touchStartX - touchEndX > 60) nextSlide();
+      if (touchEndX - touchStartX > 60) prevSlide();
+    }, { passive: true });
+
+    // Initial render
+    renderSlide();
+  </script>
+</body>
+</html>

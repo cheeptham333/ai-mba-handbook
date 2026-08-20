@@ -742,7 +742,7 @@ const AI_MBA_I18N = {
   th: {
     siteTitle: "AI MBA Interactive Prompt Engineering Lab",
     siteSubtitle: "สตูดิโอฝึกปฏิบัติการ Prompt Engineering โมเดลธุรกิจระดับโลก แบบเติมคำในช่องว่าง Step-by-Step ตามกรอบ RTCF ผสานหลายโมเดล (SWOT + TOWS + BCG + Blue Ocean + GoT ฟันธง) ในคลิกเดียว",
-    authorTag: "ออกแบบและพัฒนาโดย อาจารย์ชีพธรรม คำวิเศษณ์ & ทีม FastAI",
+    authorTag: "ออกแบบและพัฒนาโดย ชีพธรรม คำวิเศษณ์ & ทีม FastAI",
     fastAiCaption: "Co-Authored & Powered by FastAI",
     fastAiSubcaption: "หลักสูตรและเครื่องมือ AI ชั้นนำเพื่อคนไทย",
     navHome: "📖 หนังสือ AI MBA (22 บท)",

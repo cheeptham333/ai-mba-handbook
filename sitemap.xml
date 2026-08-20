@@ -7,17 +7,18 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://aimba.cheeptham.com/prompt-lab.html</loc>
-    <lastmod>2026-08-19</lastmod>
+    <loc>https://aimba.cheeptham.com/skills-studio.html</loc>
+    <lastmod>2026-08-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://aimba.cheeptham.com/#coach-profile</loc>
-    <lastmod>2026-08-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
+    <loc>https://aimba.cheeptham.com/prompt-lab.html</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
   </url>
+
   <url>
     <loc>https://aimba.cheeptham.com/#part-1</loc>
     <lastmod>2026-08-19</lastmod>
